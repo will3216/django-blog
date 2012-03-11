@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>{{tag}}</h2>
+
+{% for post in posts %}
+<h3>{{post.title}}<h3>
+<p>{{ post.body|safe|linebreaks }}</p>
+
+{% endfor %}
+
+{% endblock %}

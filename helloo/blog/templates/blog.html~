@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% for post in object_list %}
+{% for tag in post.tags.all %}
+{% if tag.name == 'news' %}
+<div class="post">
+	<h2 class="title">{{ post.title }}</h2>
+	<p class="meta"><span class="date">{{ post.created }}</span><span class="posted">Posted by <a href="/blog/about">Shane Gooden</a></span></p>
+
+	<div style="clear: both;">&nbsp;</div>
+	<div class="entry">
+	
+		{{ post.body|safe|linebreaks }}
+	
+
+		<div class="tags">
+		    <div class="tag_title">
+		    	<p><strong>Tags:</strong></p>
+		    {% for tag in post.tags.all %}
+		    <a href="/blog/tag/{{tag}}">{{tag}}</a>
+		    {% if not forloop.last %},{% endif %}
+		    {% endfor %}
+		    </div>
+		</div>
+		<p class="links"><a href="/blog/{{post.id}}" class="more">Read More</a><a href="#" title="b0x" class="comments">Comments</a></p>
+	</div>
+
+</div>
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+{% endblock %}

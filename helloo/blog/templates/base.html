@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Plain & Clean
+   
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20111024
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="blog, chemical engineering, python, programming" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>A Django Powered Blog by William Bryant</title>
+<link href="/static/css/main.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="#">Fab'n Fool </a></h1>
+			<p>by the fabrication fool himself, <a href="/blog/about">Shane Gooden</a></p>
+			</div>
+		<div id="menu">
+			<ul>
+				<li class="current_page_item"><a href="#">Homepage</a></li>
+				<li><a href="/blog/">Blog</a></li>
+				<li><a href="/blog/feed/" class="rss">Feed</a></li>
+				<li><a href="/blog/about">About</a></li>
+				{% if user.is_staff %}
+				<li><a href="/admin">Admin</a></li>
+				{% endif %}
+				<li><a href="/blog/contact">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- end #header -->
+	<div id="page" class="container">
+		<div id="content">
+			{% block content %}
+			{% endblock %}
+		</div>
+		<!-- end #content -->
+		<div id="sidebar">
+			<ul>
+				<li>
+					<div id="search" >
+						<form method="get" action="#">
+							<div>
+								<input type="text" name="s" id="search-text" value="" />
+								<input type="submit" id="search-submit" value="GO" />
+							</div>
+						</form>
+					</div>
+					<div style="clear: both;">&nbsp;</div>
+				</li>
+				<li>
+					<h2>Purpose:</h2>
+					<p>Below is a list of topics in fabrication and machining. This is not by any means a comprehensive guide, but is rather, meant to provide some important, basic information on these subjects. </p>
+				</li>
+				<li>
+					<h2>Topics</h2>
+					<ul>
+						
+						<li><a href="#">Overview</a></li>
+						<li><a href="#">Technical Drawings</a></li>
+						<li><a href="#">Safety</a></li>
+						<li><a href="#">Measuring</a></li>
+						<li><a href="#">Materials</a></li>
+						<li><a href="#">Machines and Tools</a></li>
+						
+					</ul>
+				</li>
+				
+				<li>
+					<h2><a href="/blog/archives/" class="archives">News Archives</a></h2>
+					<ul>
+					
+						<li><a href="#">Under Construction</a></li>
+						
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer-content" class="container">
+	<div id="footer-bg">
+		<div id="column1">
+			<h2>Useful Resources</h2>
+			<ul>
+				<li><a href="openmdao.org">Open MDAO Framework</a></li>
+				<li><a href="#">Metus aliquam pellentesque</a></li>
+				<li><a href="#">Suspendisse iaculis mauris</a></li>
+				<li><a href="#">Urnanet non molestie semper</a></li>
+				<li><a href="#">Proin gravida orci porttitor</a></li>
+			</ul>
+		</div>
+		<div id="column2">
+			
+		</div>
+		<div id="column3">
+			<h2>Recommended Links</h2>
+			<ul>
+				<li><a href="openmdao.org">Open MDAO Framework</a></li>
+				<li><a href="#">Metus aliquam pellentesque</a></li>
+				<li><a href="#">Suspendisse iaculis mauris</a></li>
+				<li><a href="#">Urnanet non molestie semper</a></li>
+				<li><a href="#">Proin gravida orci porttitor</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<p>Copyright (c) 2011 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>
