@@ -1,4 +1,5 @@
 # Django settings for helloo project.
+import os
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -35,6 +36,8 @@ LANGUAGE_CODE = 'en-us'
 
 SITE_ID = 1
 
+SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
+
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
 USE_I18N = True
@@ -69,7 +72,7 @@ ADMIN_MEDIA_PREFIX = '/static/admin/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    'git@heroku.com:furious-cloud-2470.git/static',
+    os.path.join(SITE_ROOT, 'static'),
 )
 
 # List of finder classes that know how to find static files in
