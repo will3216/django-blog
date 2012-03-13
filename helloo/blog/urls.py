@@ -44,7 +44,7 @@ urlpatterns = patterns('blog.views',
     url(r'^(?P<pk>\d+)', DetailView.as_view(
         model=Post,
         template_name="post.html")),
-    url(r'^archives/$', include("archives.urls")),
+    url(r'^archives/$', include("blog.archives.urls")),
     url(r'^tag/(?P<tag>\w+)$', 'tagpage'),
     url(r'^feed/$', BlogFeed()),
     url(r'^about/$', direct_to_template, {'template': 'about.html'}),
