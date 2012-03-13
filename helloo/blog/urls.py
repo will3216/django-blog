@@ -70,5 +70,6 @@ urlpatterns = patterns('blog.views',
     url(r'^feed/$', BlogFeed()),
     url(r'^about/$', direct_to_template, {'template': 'about.html'}),
     url(r'^contact/$', direct_to_template, {'template': 'contact.html'}),
+    url(r'^curriculum_vitae/$', direct_to_template, {'template': 'cv.html'}),
     url(r'^construction/$', direct_to_template, {'template': 'construction.html'}),
 )
