@@ -21,24 +21,24 @@ Released   : 20111024
 </head>
 <body>
 <div id="wrapper">
-	<div id="header" class="container">
-		<div id="logo">
-			<h1><a href="#">Fab'n Fool </a></h1>
-			<p>by the fabrication fool himself, <a href="/blog/about">Shane Gooden</a></p>
-			</div>
-		<div id="menu">
-			<ul>
-				<li class="current_page_item"><a href="#">Homepage</a></li>
-				<li><a href="/blog/">Blog</a></li>
-				<li><a href="/blog/feed/" class="rss">Feed</a></li>
-				<li><a href="/blog/about">About</a></li>
-				{% if user.is_staff %}
-				<li><a href="/admin">Admin</a></li>
-				{% endif %}
-				<li><a href="/blog/contact">Contact</a></li>
-			</ul>
-		</div>
-	</div>
+<div id="header" class="container">
+<div id="logo">
+<h1><a href="#">Fab'n Fool </a></h1>
+<p>by the fabrication fool himself, <a href="/blog/about">Shane Gooden</a></p>
+</div>
+<div id="menu">
+<ul>
+<li class="current_page_item"><a href="#">Homepage</a></li>
+<li><a href="/blog/">Blog</a></li>
+<li><a href="/curriculum_vitae" class="rss">Curriculum Vitae</a></li>
+<li><a href="/blog/about">About</a></li>
+{% if user.is_staff %}
+<li><a href="/admin">Admin</a></li>
+{% endif %}
+<li><a href="/blog/contact">Contact</a></li>
+</ul>
+</div>
+</div>
 	<!-- end #header -->
 	<div id="page" class="container">
 		<div id="content">
