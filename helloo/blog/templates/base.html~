@@ -64,17 +64,15 @@ Released   : 20111024
 					<p>Below is a list of topics in fabrication and machining. This is not by any means a comprehensive guide, but is rather, meant to provide some important, basic information on these subjects. </p>
 				</li>
 				<li>
-					<h2>Topics</h2>
-					<ul>
-						
-						<li><a href="/blog/overview">Overview</a></li>
-						<li><a href="technical_drawings">Technical Drawings</a></li>
-						<li><a href="/blog/safety">Safety</a></li>
-						<li><a href="/blog/measuring">Measuring</a></li>
-						<li><a href="/blog/materials">Materials</a></li>
-						<li><a href="/blog/machining_and_tools">Machines and Tools</a></li>
-						
-					</ul>
+<h2>Topics</h2>
+<ul>						
+<li><a href="/blog/overview">Overview</a></li>
+<li><a href="technical_drawings">Technical Drawings</a></li>
+<li><a href="/blog/safety">Safety</a></li>
+<li><a href="/blog/measuring">Measuring</a></li>
+<li><a href="/blog/materials">Materials</a></li>
+<li><a href="/blog/machining_and_tools">Machines and Tools</a></li>
+</ul>
 				</li>
 				
 				<li>
