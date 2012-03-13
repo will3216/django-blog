@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% for post in object_list %}
+{% if post.created.year == 2012 %}
+{% if post.created.month == 3 %}
+<p>{{ post.created|date:"Y-m-d" }}: <a href="/blog/{{post.id}}">{{ post.title }}</a></p>
+{% endif %}
+{% endif %}
+{% endfor %}
+
+{% endblock %}

@@ -13,9 +13,13 @@ Released   : 20111024
 -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta name="keywords" content="blog, engineering, machining, fabrication" />
-<meta name="description" content="" />
+<!-- Meta Data -->
+<meta name="keywords" content="blog, engineering, machining, fabrication, Shane Gooden, University of Kansas, KU, manufacturing, mechanical" />
+<meta name="description" content="An informal guide on aspects of machining." />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<!-- Header -->
+
 <title>A Django Powered Blog by William Bryant</title>
 <link href="{{ STATIC_URL }}css/main.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
@@ -26,11 +30,13 @@ Released   : 20111024
 <h1><a href="#">Fab'n Fool </a></h1>
 <p>by the fabrication fool himself, <a href="/blog/about">Shane Gooden</a></p>
 </div>
+
+<!-- Links Menu that runs along the top of the page -->
 <div id="menu">
 <ul>
 <li class="current_page_item"><a href="#">Homepage</a></li>
 <li><a href="/blog/">Blog</a></li>
-<li><a href="/curriculum_vitae" class="rss">Curriculum Vitae</a></li>
+<li><a href="/curriculum_vitae" class="rss">C.V.</a></li>
 <li><a href="/blog/about">About</a></li>
 {% if user.is_staff %}
 <li><a href="/admin">Admin</a></li>
@@ -39,31 +45,35 @@ Released   : 20111024
 </ul>
 </div>
 </div>
-	<!-- end #header -->
-	<div id="page" class="container">
-		<div id="content">
-			{% block content %}
+<!-- end #header -->
+
+<!-- The body/content of the webpage -->
+<div id="page" class="container">
+<div id="content">
+{% block content %}
 			{% endblock %}
-		</div>
-		<!-- end #content -->
-		<div id="sidebar">
-			<ul>
-				<li>
-					<div id="search" >
-						<form method="get" action="#">
-							<div>
-								<input type="text" name="s" id="search-text" value="" />
-								<input type="submit" id="search-submit" value="GO" />
-							</div>
-						</form>
-					</div>
-					<div style="clear: both;">&nbsp;</div>
-				</li>
-				<li>
-					<h2>Purpose:</h2>
-					<p>Below is a list of topics in fabrication and machining. This is not by any means a comprehensive guide, but is rather, meant to provide some important, basic information on these subjects. </p>
-				</li>
-				<li>
+</div>
+<!-- end #content -->
+
+<!-- The sidebar that runs along the right side of the page -->
+<div id="sidebar">
+<ul>
+<li>
+<div id="search" >
+<form method="get" action="#">
+<div>
+<input type="text" name="s" id="search-text" value="" />
+<input type="submit" id="search-submit" value="GO" />
+</div>
+</form>
+</div>
+<div style="clear: both;">&nbsp;</div>
+</li>
+<li>
+<h2>Purpose:</h2>
+<p>Below is a list of topics in fabrication and machining. This is not by any means a comprehensive guide, but is rather, meant to provide some important, basic information on these subjects. </p>
+</li>
+<li>
 <h2>Topics</h2>
 <ul>						
 <li><a href="/blog/overview">Overview</a></li>
@@ -73,18 +83,23 @@ Released   : 20111024
 <li><a href="/blog/materials">Materials</a></li>
 <li><a href="/blog/machining_and_tools">Machines and Tools</a></li>
 </ul>
-				</li>
+</li>
 				
-				<li>
-					<h2><a href="/blog/archives/" class="archives">News Archives</a></h2>
-					<ul>
-					
-						<li><a href="/blog/construction">Under Construction</a></li>
+<li>
+<h2>News Archives</h2>
+<ul>
+<li><a href="/blog/archives/" class="archives">All</a></li>
+<li><a href="/blog/archives/" class="archives">2012</a></li>
+<li><a href="/blog/archives/" class="archives">April</a></li>				
+<li><a href="/blog/archives/" class="archives">March</a></li>
+<li><a href="/blog/archives/" class="archives">February</a></li>
+<li><a href="/blog/archives/" class="archives">January</a></li>
+<li><a href="/blog/archives/" class="archives">2011</a></li>
 						
-					</ul>
-				</li>
-			</ul>
-		</div>
+</ul>
+</li>
+</ul>
+</div>
 		<!-- end #sidebar -->
 		<div style="clear: both;">&nbsp;</div>
 	</div>

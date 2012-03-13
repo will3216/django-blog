@@ -11,6 +11,5 @@ class Post(models.Model):
 	#posted_by = user
 	
 	
-	
 	def __unicode__(self):
 		return self.title
