@@ -69,10 +69,10 @@ Released   : 20111024
 						
 						<li><a href="#">Overview</a></li>
 						<li><a href="#">Technical Drawings</a></li>
-						<li><a href="#">Safety</a></li>
-						<li><a href="#">Measuring</a></li>
-						<li><a href="#">Materials</a></li>
-						<li><a href="#">Machines and Tools</a></li>
+						<li><a href="/Safety">Safety</a></li>
+						<li><a href="/Measuring">Measuring</a></li>
+						<li><a href="/Material">Materials</a></li>
+						<li><a href="/MachiningAndTools">Machines and Tools</a></li>
 						
 					</ul>
 				</li>
@@ -81,7 +81,7 @@ Released   : 20111024
 					<h2><a href="/blog/archives/" class="archives">News Archives</a></h2>
 					<ul>
 					
-						<li><a href="#">Under Construction</a></li>
+						<li><a href="/Construction">Under Construction</a></li>
 						
 					</ul>
 				</li>
