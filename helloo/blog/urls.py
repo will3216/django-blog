@@ -22,49 +22,49 @@ class BlogFeed(Feed):
 urlpatterns = patterns('blog.views',
     url(r'^$', ListView.as_view(
         #Change the [:2] in order to show more than two posts
-        queryset=Post.objects.all().order_by("-created")[:2],
+        queryset=Post.objects.filter(tags__name__in=["news"]).order_by("-created")[:5],
         template_name="blog.html")),
     url(r'^Overview/$', ListView.as_view(
-        queryset=Post.objects.all().order_by("-created"),
+        queryset=Post.objects.filter(tags__name__in=["overview"]).order_by("-created"),
         template_name="overview.html")),
     url(r'^technical_drawings/$', ListView.as_view(
-        queryset=Post.objects.all().order_by("-created"),
+        queryset=Post.objects.filter(tags__name__in=["technical_drawings"]).order_by("-created"),
         template_name="technical_drawings.html")),
     url(r'^safety/$', ListView.as_view(
-        queryset=Post.objects.all().order_by("-created"),
+        queryset=Post.objects.filter(tags__name__in=["safety"]).order_by("-created"),
         template_name="safety.html")),
     url(r'^measuring/$', ListView.as_view(
-        queryset=Post.objects.all().order_by("-created"),
+        queryset=Post.objects.filter(tags__name__in=["measuring"]).order_by("-created"),
         template_name="measuring.html")),
     url(r'^materials/$', ListView.as_view(
-        queryset=Post.objects.all().order_by("-created"),
+        queryset=Post.objects.filter(tags__name__in=["materials"]).order_by("-created"),
         template_name="materials.html")),
     url(r'^machining_and_tools/$', ListView.as_view(
-        queryset=Post.objects.all().order_by("-created"),
+        queryset=Post.objects.filter(tags__name__in=["machining_and_tools"]).order_by("-created"),
         template_name="machining_and_tools.html")),
     url(r'^(?P<pk>\d+)', DetailView.as_view(
         model=Post,
         template_name="post.html")),
     url(r'^archives/', ListView.as_view(
-        queryset=Post.objects.all().order_by("-created"),
+        queryset=Post.objects.filter(tags__name__in=["news"]).order_by("-created"),
         template_name="archives.html")),
     url(r'^archives-2012/$', ListView.as_view(
-        queryset=Post.objects.all().order_by("-created"),
+        queryset=Post.objects.filter(tags__name__in=["news"]).order_by("-created"),
         template_name="2012.html")),
     url(r'^archives-April/$', ListView.as_view(
-        queryset=Post.objects.all().order_by("-created"),
+        queryset=Post.objects.filter(tags__name__in=["news"]).order_by("-created"),
         template_name="April.html")),
     url(r'^archives-March/$', ListView.as_view(
-        queryset=Post.objects.all().order_by("-created"),
+        queryset=Post.objects.filter(tags__name__in=["news"]).order_by("-created"),
         template_name="March.html")),
     url(r'^archives-February/$', ListView.as_view(
-        queryset=Post.objects.all().order_by("-created"),
+        queryset=Post.objects.filter(tags__name__in=["news"]).order_by("-created"),
         template_name="February.html")),
     url(r'^archives-January/$', ListView.as_view(
-        queryset=Post.objects.all().order_by("-created"),
+        queryset=Post.objects.filter(tags__name__in=["news"]).order_by("-created"),
         template_name="January.html")),
     url(r'^archives-2011/$', ListView.as_view(
-        queryset=Post.objects.all().order_by("-created"),
+        queryset=Post.objects.filter(tags__name__in=["news"]).order_by("-created"),
         template_name="2011.html")),
     url(r'^tag/(?P<tag>\w+)$', 'tagpage'),
     url(r'^feed/$', BlogFeed()),
