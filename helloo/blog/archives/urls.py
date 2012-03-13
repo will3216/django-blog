@@ -26,3 +26,4 @@ urlpatterns = patterns('',
     url(r'^2011$', ListView.as_view(
         queryset=Post.objects.all().order_by("-created"),
         template_name="2011.html")),
+)

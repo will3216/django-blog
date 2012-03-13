@@ -1,5 +1,5 @@
 from django.conf.urls.defaults import patterns, include, url
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView
 from blog.models import Post
 
 
@@ -7,7 +7,7 @@ urlpatterns = patterns('',
     url(r'^$', ListView.as_view(
         #Change the [:2] in order to show more than two posts
         queryset=Post.objects.all().order_by("-created"),
-        template_name="archive.html")),
+        template_name="archives.html")),
     url(r'^2012$', ListView.as_view(
         queryset=Post.objects.all().order_by("-created"),
         template_name="2012.html")),
