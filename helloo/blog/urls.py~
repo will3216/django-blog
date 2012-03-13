@@ -49,22 +49,22 @@ urlpatterns = patterns('blog.views',
         #Change the [:2] in order to show more than two posts
         queryset=Post.objects.all().order_by("-created"),
         template_name="archives.html"))
-    url(r'^/archives/2012/$', ListView.as_view(
+    url(r'^archives/2012/$', ListView.as_view(
         queryset=Post.objects.all().order_by("-created"),
         template_name="2012.html")),
-    url(r'^/archives/April/$', ListView.as_view(
+    url(r'^archives/April/$', ListView.as_view(
         queryset=Post.objects.all().order_by("-created"),
         template_name="April.html")),
-    url(r'^/archives/March/$', ListView.as_view(
+    url(r'^archives/March/$', ListView.as_view(
         queryset=Post.objects.all().order_by("-created"),
         template_name="March.html")),
-    url(r'^/archives/February/$', ListView.as_view(
+    url(r'^archives/February/$', ListView.as_view(
         queryset=Post.objects.all().order_by("-created"),
         template_name="February.html")),
-    url(r'^/archives/January/$', ListView.as_view(
+    url(r'^archives/January/$', ListView.as_view(
         queryset=Post.objects.all().order_by("-created"),
         template_name="January.html")),
-    url(r'^/archives/2011/$', ListView.as_view(
+    url(r'^archives/2011/$', ListView.as_view(
         queryset=Post.objects.all().order_by("-created"),
         template_name="2011.html")),
     url(r'^tag/(?P<tag>\w+)$', 'tagpage'),
