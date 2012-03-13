@@ -24,7 +24,7 @@ urlpatterns = patterns('blog.views',
         #Change the [:2] in order to show more than two posts
         queryset=Post.objects.filter(tags__name__in=["news"]).order_by("-created")[:5],
         template_name="blog.html")),
-    url(r'^Overview/$', ListView.as_view(
+    url(r'^overview/$', ListView.as_view(
         queryset=Post.objects.filter(tags__name__in=["overview"]).order_by("-created"),
         template_name="overview.html")),
     url(r'^technical_drawings/$', ListView.as_view(

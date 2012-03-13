@@ -34,7 +34,7 @@ Released   : 20111024
 <!-- Links Menu that runs along the top of the page -->
 <div id="menu">
 <ul>
-<li class="current_page_item"><a href="#">Homepage</a></li>
+<li class="current_page_item"><a href="/">Homepage</a></li>
 <li><a href="/blog/">Blog</a></li>
 <li><a href="/blog/curriculum_vitae" class="rss">C.V.</a></li>
 <li><a href="/blog/about">About</a></li>
