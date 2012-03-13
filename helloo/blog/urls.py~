@@ -3,7 +3,7 @@ from django.views.generic import ListView, DetailView
 from django.views.generic.simple import direct_to_template
 from blog.models import Post
 from django.contrib.syndication.views import Feed
-import blog.archives
+import blog.archives.urls
 
 class BlogFeed(Feed):
     title = "the blog"
