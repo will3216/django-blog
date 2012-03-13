@@ -7,6 +7,7 @@ class Post(models.Model):
 	body = models.TextField()
 	created = models.DateTimeField()
 	tags = TaggableManager()
+	order = models.CharField(max_length=2)
 	#posted_by = user
 	
 	

@@ -7,7 +7,7 @@ class Post(models.Model):
 	body = models.TextField()
 	created = models.DateTimeField()
 	tags = TaggableManager()
-	posted_by = user
+	#posted_by = user
 	
 	
 	
