@@ -89,12 +89,12 @@ Released   : 20111024
 <h2>News Archives</h2>
 <ul>
 <li><a href="/blog/archives/" class="archives">All</a></li>
-<li><a href="/blog/archives/" class="archives">2012</a></li>
-<li><a href="/blog/archives/" class="archives">April</a></li>				
-<li><a href="/blog/archives/" class="archives">March</a></li>
-<li><a href="/blog/archives/" class="archives">February</a></li>
-<li><a href="/blog/archives/" class="archives">January</a></li>
-<li><a href="/blog/archives/" class="archives">2011</a></li>
+<li><a href="/blog/archives/2012" class="archives">2012</a></li>
+<li><a href="/blog/archives/April" class="archives">April</a></li>
+<li><a href="/blog/archives/March" class="archives">March</a></li>
+<li><a href="/blog/archives/February" class="archives">February</a></li>
+<li><a href="/blog/archives/January" class="archives">January</a></li>
+<li><a href="/blog/archives/2011" class="archives">2011</a></li>
 						
 </ul>
 </li>
