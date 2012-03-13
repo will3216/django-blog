@@ -49,7 +49,7 @@ urlpatterns = patterns('blog.views',
         #Change the [:2] in order to show more than two posts
         queryset=Post.objects.all().order_by("-created"),
         template_name="archives.html"))
-    url(r'^archives/2012/$', ListView.as_view(
+    url(r'^2012/$', ListView.as_view(
         queryset=Post.objects.all().order_by("-created"),
         template_name="2012.html")),
     url(r'^April/$', ListView.as_view(
