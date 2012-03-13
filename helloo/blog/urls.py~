@@ -45,7 +45,28 @@ urlpatterns = patterns('blog.views',
     url(r'^(?P<pk>\d+)', DetailView.as_view(
         model=Post,
         template_name="post.html")),
-    url(r'^archives/', include("blog.archives.urls")),
+    url(r'^archives/', ListView.as_view(
+        #Change the [:2] in order to show more than two posts
+        queryset=Post.objects.all().order_by("-created"),
+        template_name="archives.html"))
+    url(r'^/archives/2012/$', ListView.as_view(
+        queryset=Post.objects.all().order_by("-created"),
+        template_name="2012.html")),
+    url(r'^/archives/April/$', ListView.as_view(
+        queryset=Post.objects.all().order_by("-created"),
+        template_name="April.html")),
+    url(r'^/archives/March/$', ListView.as_view(
+        queryset=Post.objects.all().order_by("-created"),
+        template_name="March.html")),
+    url(r'^/archives/February/$', ListView.as_view(
+        queryset=Post.objects.all().order_by("-created"),
+        template_name="February.html")),
+    url(r'^/archives/January/$', ListView.as_view(
+        queryset=Post.objects.all().order_by("-created"),
+        template_name="January.html")),
+    url(r'^/archives/2011/$', ListView.as_view(
+        queryset=Post.objects.all().order_by("-created"),
+        template_name="2011.html")),
     url(r'^tag/(?P<tag>\w+)$', 'tagpage'),
     url(r'^feed/$', BlogFeed()),
     url(r'^about/$', direct_to_template, {'template': 'about.html'}),
