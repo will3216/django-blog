@@ -1,5 +1,6 @@
 from django.conf.urls.defaults import patterns, include, url
-
+from django.views.generic import ListView, DetailView
+from django.views.generic.simple import direct_to_template
 from django.contrib import admin
 admin.autodiscover()
 
@@ -9,4 +10,23 @@ urlpatterns = patterns('',
     url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^overview$', ListView.as_view(
+        queryset=Post.objects.all().order_by("-created"),
+        template_name="overview.html")),
+    url(r'^technical_drawings$', ListView.as_view(
+        queryset=Post.objects.all().order_by("-created"),
+        template_name="technical_drawings.html")),
+    url(r'^safety$', ListView.as_view(
+        queryset=Post.objects.all().order_by("-created"),
+        template_name="safety.html")),
+    url(r'^measuring$', ListView.as_view(
+        queryset=Post.objects.all().order_by("-created"),
+        template_name="measuring.html")),
+    url(r'^materials$', ListView.as_view(
+        queryset=Post.objects.all().order_by("-created"),
+        template_name="materials.html")),
+    url(r'^machining_and_tools$', ListView.as_view(
+        queryset=Post.objects.all().order_by("-created"),
+        template_name="machining_and_tools.html")),
+    url(r'^construction/$', direct_to_template, {'template': 'construction.html'}),
 )
