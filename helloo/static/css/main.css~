@@ -265,6 +265,9 @@ a:hover {
 	margin-bottom: 30px;
 }
 
+
+
+
 .more {
 	display: block;
 	float: left;
@@ -288,6 +291,30 @@ a:hover {
 	color: #FFFFFF;
 }
 
+img.top {
+	vertical-align:top;
+}
+
+img.leftsmall{
+	float: left;
+	margin: 5px;
+	height: auto;
+	width: 200px;
+}
+
+img.leftlarge{
+	float: left;
+	margin: 5px;
+	height: auto;
+	width: 600px;
+}
+
+img.leftmedium{
+	float: left;
+	margin: 5px;
+	height: auto;
+	width: 300px;
+}
 /* Sidebar */
 
 #sidebar {
@@ -297,6 +324,14 @@ a:hover {
 	padding: 0px 0px 0px 0px;
 	color: #787878;
 }
+
+
+ 
+
+
+
+
+
 
 #sidebar ul {
 	margin: 0;
@@ -345,7 +380,7 @@ a:hover {
 #sidebar p {
 	margin: 0 0px;
 	padding: 0px 30px 20px 30px;
-	text-align: right;
+	text-align: left;
 }
 
 #sidebar a {

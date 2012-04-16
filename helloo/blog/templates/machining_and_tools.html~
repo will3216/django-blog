@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2> Machining and Tools </h2>
+{% for post in object_list %}
+{% if post.include_picture == '1' %}
+    {% if post.alignment == '1' %}
+	{% if post.size == '1'%}
+	    <img src="/static/img/{{ post.picture_name }}" class='leftsmall' alt="/static/img/img10" />
+        {% else %}
+            {% if post.size == '2'%}
+                <img src="/static/img/{{ post.picture_name }}" class='leftmedium' alt="/static/img/img10" />
+            {% else %}
+                <img src="/static/img/{{ post.picture_name }}" class='leftlarge' alt="/static/img/img10" />
+    {% else %}
+        {% if post.alignment == '2'%}
+            {% if post.size == '1'%}
+		<img src="/static/img/{{ post.picture_name }}" class='rightsmall' alt="/static/img/img10" />
+            {% else %}
+                {% if post.size == '2'%}
+            	    <img src="/static/img/{{ post.picture_name }}" class='rightmedium' alt="/static/img/img10" />
+                {% else %}
+            	    <img src="/static/img/{{ post.picture_name }}" class='rightlarge' alt="/static/img/img10" />
+        {% else %}
+            {% if post.size == '1'%}
+		<img src="/static/img/{{ post.picture_name }}" class='centersmall' alt="/static/img/img10" />
+            {% else %}
+                {% if post.size == '2'%}
+            	    <img src="/static/img/{{ post.picture_name }}" class='centermedium' alt="/static/img/img10" />
+                {% else %}
+                    <img src="/static/img/{{ post.picture_name }}" class='centerlarge' alt="/static/img/img10" />
+{% endif %}
+
+<div class="post">
+{% if post.title == 'no_title' %}
+{% else %}
+<h3 class="title">{{ post.title }}</h3>
+{% endif %}
+<div style="clear: both;">&nbsp;</div>
+<div class="entry">
+	
+{{ post.body|safe|linebreaks }}
+	
+</div>
+
+</div>
+
+
+{% endfor %}
+
+{% endblock %}

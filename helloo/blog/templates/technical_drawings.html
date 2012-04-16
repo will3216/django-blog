@@ -1,13 +1,49 @@
 {% extends "base.html" %}
 
 {% block content %}
-
+<h2> Technical Drawings </h2>
 {% for post in object_list %}
-{% for tag in post.tags.all %}
-{% if tag.name == 'technical_drawings' %}
 
+{% if post.include_picture == '1' %}
+    {% if post.alignment == '1' %}
+	{% if post.size == '1'%}
+	    <img src="/static/img/{{ post.picture_name }}" class='leftsmall' alt="/static/img/img10" />
+        {% else %}
+            {% if post.size == '2'%}
+                <img src="/static/img/{{ post.picture_name }}" class='leftmedium' alt="/static/img/img10" />
+            {% else %}
+                <img src="/static/img/{{ post.picture_name }}" class='leftlarge' alt="/static/img/img10" />
+            {% endif %}
+        {% endif %}
+    {% else %}
+        {% if post.alignment == '2'%}
+            {% if post.size == '1'%}
+		<img src="/static/img/{{ post.picture_name }}" class='rightsmall' alt="/static/img/img10" />
+            {% else %}
+                {% if post.size == '2'%}
+            	    <img src="/static/img/{{ post.picture_name }}" class='rightmedium' alt="/static/img/img10" />
+                {% else %}
+            	    <img src="/static/img/{{ post.picture_name }}" class='rightlarge' alt="/static/img/img10" />
+            	{% endif %}
+    	    {% endif %}
+        {% else %}
+            {% if post.size == '1'%}
+		<img src="/static/img/{{ post.picture_name }}" class='centersmall' alt="/static/img/img10" />
+            {% else %}
+                {% if post.size == '2'%}
+            	    <img src="/static/img/{{ post.picture_name }}" class='centermedium' alt="/static/img/img10" />
+                {% else %}
+                    <img src="/static/img/{{ post.picture_name }}" class='centerlarge' alt="/static/img/img10" />
+                {% endif %}
+            {% endif %}
+        {% endif %}
+    {% endif %}
+{% endif %}
 <div class="post">
-<h2 class="title">{{ post.title }}</h2>
+{% if post.title == 'no_title' %}
+{% else %}
+<h3 class="title">{{ post.title }}</h3>
+{% endif %}
 
 <div style="clear: both;">&nbsp;</div>
 <div class="entry">
@@ -18,8 +54,7 @@
 
 </div>
 
-{% endif %}
-{% endfor %}
+
 {% endfor %}
 
 {% endblock %}

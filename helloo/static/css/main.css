@@ -265,6 +265,9 @@ a:hover {
 	margin-bottom: 30px;
 }
 
+
+
+
 .more {
 	display: block;
 	float: left;
@@ -288,6 +291,75 @@ a:hover {
 	color: #FFFFFF;
 }
 
+img.top {
+	vertical-align:top;
+}
+
+img.leftsmall{
+	float: left;
+	margin: 5px;
+	height: auto;
+	width: 200px;
+}
+
+img.leftlarge{
+	float: left;
+	margin: 5px;
+	height: auto;
+	width: 600px;
+}
+
+img.leftmedium{
+	float: left;
+	margin: 5px;
+	height: auto;
+	width: 300px;
+}
+
+img.rightsmall{
+	float: right;
+	margin: 5px;
+	height: auto;
+	width: 200px;
+}
+
+img.rightlarge{
+	float: right;
+	margin: 5px;
+	height: auto;
+	width: 600px;
+}
+
+img.rightmedium{
+	float: right;
+	margin: 5px;
+	height: auto;
+	width: 300px;
+}
+
+img.centersmall{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	width: 200px;
+}
+
+img.centermedium{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	width: 200px;
+}
+
+img.centersmall{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	width: 200px;
+}
 /* Sidebar */
 
 #sidebar {
@@ -297,6 +369,14 @@ a:hover {
 	padding: 0px 0px 0px 0px;
 	color: #787878;
 }
+
+
+ 
+
+
+
+
+
 
 #sidebar ul {
 	margin: 0;
