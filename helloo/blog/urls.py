@@ -45,7 +45,7 @@ urlpatterns = patterns('blog.views',
     url(r'^(?P<pk>\d+)', DetailView.as_view(
         model=Post,
         template_name="post.html")),
-    url(r'^archives/', ListView.as_view(
+    url(r'^archives/$', ListView.as_view(
         queryset=Post.objects.filter(tags__name__in=["news"]).order_by("-created"),
         template_name="archives.html")),
     url(r'^archives/2012/$', ListView.as_view(
