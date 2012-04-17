@@ -36,57 +36,57 @@ class Post(models.Model):
     file_type = models.CharField(max_length=3, blank=True, choices=FILE_TYPE_CHOICES)
 	
 
-#   def post_header(self, _title_size=3):
-#	if include_picture == 1:
-#	    if self.alignment == 1:
-#		if self.size == 1:
-#		    name = ''.join(['/static/img/', picture_name, '.', file_type])
-#		    img_class = 'leftsmall'
-#		    return _post_html(self, _title_size, name, img_class)
-#		elif self.size == 2:
-#		    name = ''.join(['/static/img/', picture_name, '.', file_type])
-#		    img_class = 'leftmedium'
-#		    return _post_html(self, _title_size, name, img_class)
-#		elif self.size == 3:
-#		    name = ''.join(['/static/img/', picture_name, '.', file_type])
-#		    img_class = 'leftlarge'
-#		    return _post_html(self, _title_size, name, img_class)
-#	        else:
-#	            return _post_html(self, _title_size, None, None)
-#	    elif self.alignment ==2:
-#		if self.size == 1:
-#		    name = ''.join(['/static/img/', picture_name, '.', file_type])
-#		    img_class = 'rightsmall'
-#		    return _post_html(self, _title_size, name, img_class)
-#		elif self.size == 2:
-#		    name = ''.join(['/static/img/', picture_name, '.', file_type])
-#		    img_class = 'rightmedium'
-#		    return _post_html(self, _title_size, name, img_class)
-#		elif self.size == 3:
-#		    name = ''.join(['/static/img/', picture_name, '.', file_type])
-#		    img_class = 'rightlarge'
-#		    return _post_html(self, _title_size, name, img_class)
-#	        else:
-#	            return _post_html(self, _title_size, None, None)
-#	    elif self.alignment == 3:
-#		if self.size == 1:
-#		    name = ''.join(['/static/img/', picture_name, '.', file_type])
-#		    img_class = 'centersmall'
-#		    return _post_html(self, _title_size, name, img_class)
-#		elif self.size == 2:
-#		    name = ''.join(['/static/img/', picture_name, '.', file_type])
-#		    img_class = 'centermedium'
-#		    return _post_html(self, _title_size, name, img_class)
-#		elif self.size == 3:
-#		    name = ''.join(['/static/img/', picture_name, '.', file_type])
-#		    img_class = 'centerlarge'
-#		    return _post_html(self, _title_size, name, img_class)
-#	        else:
-#	            return _post_html(self, _title_size, None, None)
-#           else:
-#                return _post_html(self, _title_size, None, None)
-#	else:
-#	    return _post_html(self, _title_size, None, None)
+   def post_header(self, _title_size=3):
+	if include_picture == 1:
+	    if self.alignment == 1:
+		if self.size == 1:
+		    name = ''.join(['/static/img/', picture_name, '.', file_type])
+		    img_class = 'leftsmall'
+		    return _post_html(self, _title_size, name, img_class)
+		elif self.size == 2:
+		    name = ''.join(['/static/img/', picture_name, '.', file_type])
+		    img_class = 'leftmedium'
+		    return _post_html(self, _title_size, name, img_class)
+		elif self.size == 3:
+		    name = ''.join(['/static/img/', picture_name, '.', file_type])
+		    img_class = 'leftlarge'
+		    return _post_html(self, _title_size, name, img_class)
+	        else:
+	            return _post_html(self, _title_size, None, None)
+	    elif self.alignment ==2:
+		if self.size == 1:
+		    name = ''.join(['/static/img/', picture_name, '.', file_type])
+		    img_class = 'rightsmall'
+		    return _post_html(self, _title_size, name, img_class)
+		elif self.size == 2:
+		    name = ''.join(['/static/img/', picture_name, '.', file_type])
+		    img_class = 'rightmedium'
+		    return _post_html(self, _title_size, name, img_class)
+		elif self.size == 3:
+		    name = ''.join(['/static/img/', picture_name, '.', file_type])
+		    img_class = 'rightlarge'
+		    return _post_html(self, _title_size, name, img_class)
+	        else:
+	            return _post_html(self, _title_size, None, None)
+	    elif self.alignment == 3:
+		if self.size == 1:
+		    name = ''.join(['/static/img/', picture_name, '.', file_type])
+		    img_class = 'centersmall'
+		    return _post_html(self, _title_size, name, img_class)
+		elif self.size == 2:
+		    name = ''.join(['/static/img/', picture_name, '.', file_type])
+		    img_class = 'centermedium'
+		    return _post_html(self, _title_size, name, img_class)
+		elif self.size == 3:
+		    name = ''.join(['/static/img/', picture_name, '.', file_type])
+		    img_class = 'centerlarge'
+		    return _post_html(self, _title_size, name, img_class)
+	        else:
+	            return _post_html(self, _title_size, None, None)
+           else:
+                return _post_html(self, _title_size, None, None)
+	else:
+	    return _post_html(self, _title_size, None, None)
 #			
 #    def _post_html(self, _title_size, _name, _img_class):
 #   	_image = _image_html(_name, _img_class)
