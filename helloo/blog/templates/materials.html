@@ -6,33 +6,33 @@
 {% if post.include_picture == '1' %}
     {% if post.alignment == '1' %}
 	{% if post.size == '1'%}
-	    <img src="/static/img/{{ post.picture_name }}" class='leftsmall' alt="/static/img/img10" />
+	    <img src="/static/img/{{ post.picture_name }}.{{ post.file_type }}" class='leftsmall' alt="/static/img/img10.gif" />
         {% else %}
             {% if post.size == '2'%}
-                <img src="/static/img/{{ post.picture_name }}" class='leftmedium' alt="/static/img/img10" />
+                <img src="/static/img/{{ post.picture_name }}.{{ post.file_type }}" class='leftmedium' alt="/static/img/img10.gif" />
             {% else %}
-                <img src="/static/img/{{ post.picture_name }}" class='leftlarge' alt="/static/img/img10" />
+                <img src="/static/img/{{ post.picture_name }}.{{ post.file_type }}" class='leftlarge' alt="/static/img/img10.gif" />
             {% endif %}
         {% endif %}
     {% else %}
         {% if post.alignment == '2'%}
             {% if post.size == '1'%}
-		<img src="/static/img/{{ post.picture_name }}" class='rightsmall' alt="/static/img/img10" />
+		<img src="/static/img/{{ post.picture_name }}.{{ post.file_type }}" class='rightsmall' alt="/static/img/img10.gif" />
             {% else %}
                 {% if post.size == '2'%}
-            	    <img src="/static/img/{{ post.picture_name }}" class='rightmedium' alt="/static/img/img10" />
+            	    <img src="/static/img/{{ post.picture_name }}.{{ post.file_type }}" class='rightmedium' alt="/static/img/img10.gif" />
                 {% else %}
-            	    <img src="/static/img/{{ post.picture_name }}" class='rightlarge' alt="/static/img/img10" />
+            	    <img src="/static/img/{{ post.picture_name }}.{{ post.file_type }}" class='rightlarge' alt="/static/img/img10.gif" />
             	{% endif %}
     	    {% endif %}
         {% else %}
             {% if post.size == '1'%}
-		<img src="/static/img/{{ post.picture_name }}" class='centersmall' alt="/static/img/img10" />
+		<img src="/static/img/{{ post.picture_name }}.{{ post.file_type }}" class='centersmall' alt="/static/img/img10.gif" />
             {% else %}
                 {% if post.size == '2'%}
-            	    <img src="/static/img/{{ post.picture_name }}" class='centermedium' alt="/static/img/img10" />
+            	    <img src="/static/img/{{ post.picture_name }}.{{ post.file_type }}" class='centermedium' alt="/static/img/img10.gif" />
                 {% else %}
-                    <img src="/static/img/{{ post.picture_name }}" class='centerlarge' alt="/static/img/img10" />
+                    <img src="/static/img/{{ post.picture_name }}.{{ post.file_type }}" class='centerlarge' alt="/static/img/img10.gif" />
                 {% endif %}
             {% endif %}
         {% endif %}
