@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-{% load disqus_tags %}
+
 {% for post in object_list %}
 {% if post.include_picture == '1' %}
     {% if post.alignment == '1' %}
@@ -51,9 +51,9 @@
 		{{ post.body|safe|linebreaks }}
 		
 		<p class="links"><a href="/blog/{{post.id}}" title="b0x" class="comments">Comments</a></p>
-		
+		{% load disqus_tags %}
 		{% disqus_recent_comments shortname 5 50 0 24 %}
-		{% disqus_show_comments %}
+		
 	</div>
 
 </div>
