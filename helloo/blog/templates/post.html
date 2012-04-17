@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<link href="/static/css/main.css" rel="stylesheet" type="text/css" media="screen" />
+<div class='post'>
 {% if post.title == 'no_title' %}
 {% else %}
 <h2 class="title">{{ post.title }}</h2>
@@ -12,7 +12,7 @@
 <div style="clear: both;">&nbsp;</div>
 <div class="entry">
 
-<div class="post">
+
 {% if post.include_picture == '1' %}
     {% if post.alignment == '1' %}
 	{% if post.size == '1'%}
@@ -64,6 +64,7 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
 </div>
 {% endblock %}
 
