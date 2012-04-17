@@ -87,64 +87,64 @@ class Post(models.Model):
                 return _post_html(self, _title_size, None, None)
 	else:
 	    return _post_html(self, _title_size, None, None)
-			
-    def _post_html(self, _title_size, _name, _img_class):
-    	_image = _image_html(_name, _img_class)
-	_title = _title_html(self, _title_size)
-	_date_author = _date_author_html(self)
-	return _clean_post(_image, _title, _date_author)
-	
-   def _date_author_html(self):
-    	for tag in self.tags:
-	    if tag == 'news':
-	        _start = '<p class="meta"><span class="date"> '
-   		_date = self.created
-  		_middle = ' </span><span class="posted">Posted by '
-    		_end = '<a href="/blog/about/">Shane Gooden</a></span></p>'
-    		_date_and_author = ''.join([_start, _date, _middle, _end])
-	        return _date_and_author
-        return ''
-    
-    def _title_html(self, _title_size):
-        if not self.title == 'no_title':
-            _open = ''.join(['<h', str(_title_size)])
-	    _class = 'class="title"> '
-	    _close = ''.join([' </h', str(_title_size), '>'])
-	    _title = ''.join([_open, _class, self.title, _close])
-	else:
-	    _title = ''
-	return _title
-	
-    def _image_html(_name, _img_class):
-    	if not (_name == None or _img_class=None):
-    	    _src = '<img src="'
-	    _class = '" class='
-	    _alt = ' alt="/static/img/img10.gif"'
-	    _close = ' />'
-	    _image = ''.join([_src, _name, _class, _img_class, _alt, _close])
-	else:
-	    _image = ''
-	return _image
-	
-    def _clean_post(_image, _title, _date_author):
-        _div_post = '<div class="post">'
-        _div_entry = '<div class="entry">'
-        _html1 = '\n'.join([_div_post, _div_title]).rstrip()
-        _html2 = '\n'.join([_date_author, _div_entry, _image]).rstrip().lstrip()
-        return '\n'.join([_html1, _html2])
-    
-
-    def post_footer(_disqus=False):
-    	_end_div= '</div>'
-    	_disqus = _disqus_script(_disqus)
-    	return '\n'.join([_end_div, _disqus, _end_div])
-    	
-    def _disqus_script(_disqus):
-    	if _disqus == True:
-    	    _script = d_script
-	else:
-	    _script = ''
-	return _script   
+#			
+#    def _post_html(self, _title_size, _name, _img_class):
+#   	_image = _image_html(_name, _img_class)
+#	_title = _title_html(self, _title_size)
+#	_date_author = _date_author_html(self)
+#	return _clean_post(_image, _title, _date_author)
+#	
+#   def _date_author_html(self):
+#   	for tag in self.tags:
+#	    if tag == 'news':
+#	        _start = '<p class="meta"><span class="date"> '
+#   		_date = self.created
+#  		_middle = ' </span><span class="posted">Posted by '
+#    		_end = '<a href="/blog/about/">Shane Gooden</a></span></p>'
+#    		_date_and_author = ''.join([_start, _date, _middle, _end])
+#	        return _date_and_author
+#        return ''
+#    
+#    def _title_html(self, _title_size):
+#        if not self.title == 'no_title':
+#            _open = ''.join(['<h', str(_title_size)])
+#	    _class = 'class="title"> '
+#	    _close = ''.join([' </h', str(_title_size), '>'])
+#	    _title = ''.join([_open, _class, self.title, _close])
+#	else:
+#	    _title = ''
+#	return _title
+#	
+#    def _image_html(_name, _img_class):
+#    	if not (_name == None or _img_class=None):
+#   	    _src = '<img src="'
+#	    _class = '" class='
+#	    _alt = ' alt="/static/img/img10.gif"'
+#	    _close = ' />'
+#	    _image = ''.join([_src, _name, _class, _img_class, _alt, _close])
+#	else:
+#	    _image = ''
+#	return _image
+#	
+#    def _clean_post(_image, _title, _date_author):
+#        _div_post = '<div class="post">'
+#        _div_entry = '<div class="entry">'
+#        _html1 = '\n'.join([_div_post, _div_title]).rstrip()
+#        _html2 = '\n'.join([_date_author, _div_entry, _image]).rstrip().lstrip()
+#        return '\n'.join([_html1, _html2])
+#    
+#
+#    def post_footer(_disqus=False):
+#    	_end_div= '</div>'
+#    	_disqus = _disqus_script(_disqus)
+#    	return '\n'.join([_end_div, _disqus, _end_div])
+#    	
+#    def _disqus_script(_disqus):
+#    	if _disqus == True:
+#    	    _script = d_script
+#	else:
+#	    _script = ''
+#	return _script   
     
     def __unicode__(self):
 	return self.title
