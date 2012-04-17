@@ -25,9 +25,15 @@ class Post(models.Model):
 		('1', 'Include a picture'),
 		('2', 'Don\'t include a picture'),
 	)
+	FILE_TYPE_CHOICES = (
+		('gif', '.gif'),
+		('jpg', '.jpf'),
+		('bmp', '.bmp'),
+	)
 	include_picture = models.CharField(max_length=1, blank=True, choices=PICTURE_CHOICES)
 	alignment = models.CharField(max_length=1, blank=True, choices=ALIGNMENT_CHOICES)
 	size = models.CharField(max_length=1, blank=True, choices=SIZE_CHOICES)
+	file_type = models.CharField(max_length=3, blank=True, choices=FILE_TYPE_CHOICES)
 	#posted_by = user
 	
 	
