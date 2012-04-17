@@ -1,7 +1,97 @@
 {% extends "base.html" %}
 
 {% block content %}
+<h1 class=title>SHANE GOODEN</h1>
+<ul float=center><li>Local Address:</li>
+<li>829 Madeline Lane</li>
+<li>Lawrence, KS 66049</li>
+<li>Permanent Address:</li>
+<li>215 South 5th Street</li>
+<li>Salina, KS 67401</li>
+<li>(785) 643-8657</li>
+<li>sdg92488@ku.edu</li></ul>
 
+<h2 class=title>Qualifications</h2>
+
+<li>Expertise managing Mechanical Engineering Machine Shop operations and equipment.
+Successful at analyzing and restructuring systems to improve performance, functionality, and productivity.  </li>
+<li>Experience operating electrical devices including oscilloscopes, pressure transducers, flow meters, load cells, accelerometers, optical encoders, QTI sensors, data acquisition boards, microprocessors, and circuit boards.</li>
+<li>Additional technical expertise includes utilizing vertical milling/CNC machines, lathes, various saws, welding tools, torches, and routers.</li>
+<li>Leading and motivating a team of five students to complete senior design project that focuses on creating alternative energy sources to increase energy efficiency and improve global power infrastructure (EcoHawks).</li>
+<li>Designing and fabricating a go-kart that can be powered by an electric motor and a gasoline engine. The cart will be donated to a local high school to promote interest and increase mechanical engineering education.</li>
+<li>Experience collaborating with American Society of Mechanical Engineering students to design and construct two human powered vehicles with success.</li> 
+<li>Ranked fourth in the class at the University of Kansas, Department of Mechanical Engineering in 2009.</li>
+<li>Securing donations for senior design project through effective fundraising strategies and soliciting local businesses.</li>
+<li><quote>Shane Gooden is an enthusiastic, motivated, self starter, and a hardworking student employee. Shane is a serious and successful student. I will truly miss him when he graduates.<quote> ~ Charles Gabel, Research Technologist, University of Kansas Mechanical Engineering Department</li>
+<li>“Shane has a tremendous background in the practical implementation and theory of internal combustion. Combining this with his enthusiasm and outgoing nature allows him to proceed smartly in the design and execution of engineering projects while also being a great resource for his peers.” ~ Dr. Christopher Depcik, Mechanical Engineering Professor, University of Kansas</li>
+
+<h2 class=title>Education</h2>
+
+<h3>B.S., Mechanical Engineering - Expected Graduation: 05/12</h3> 
+<h3>University of Kansas - Lawrence, KS     GPA: 3.58</h3>
+
+<h2 class=title>Relevant Coursework</h2>
+
+<li>Internal Combustion Engines; Microprocessors and Engineering Applications; Thermodynamics I, II;</li>
+<li>Design of Machine Elements I, II; Control Systems; Measurements and Instrumentation; Heat Transfer; Mechanisms;  and Dynamics of Machinery</li>
+
+<h2 class=title>Computer Skills</h2>
+
+<li>Proficient utilizing SolidWorks, Autodesk Inventor, MatLab, LabVIEW, Pro/E Wildfire 3.0, C++, and MS Office</li> 
+
+<h2 class=title>Experience</h2>
+
+<h3 class=title>UNIVERSITY OF KANSAS - Lawrence,KS</h3>
+<h3 class=title>Mechanical Engineering Machine Shop Technician  (06/08 – Present)</h3>
+
+<li>Manage machine shop operations and direct students on effective mechanical usage and applications.</li>
+<li>Perform monthly machine maintenance to increase functionality and reduce replacement/equipment costs.</li>
+<li>Employ proper cleaning methods to sanitize machine shop and related equipment ensuring compliance with health, safety, and OSHA regulations.</li>   
+<li>Assist in hiring new personnel: review résumés, screen candidates, and conduct interviews.</li> 
+
+<h4 class=title>Key Achievements</h4>
+<li>Collaborated with faculty, students, and staff to design and manufacture components for a NASA certified aircraft that was utilized to map ice sheets in Antarctica.
+Trained four new employees to meet departmental goals.</li> 
+<li>Increase student performance levels by offering professional assistance in the design and production stages of various engineering components to complete departmental, biology, geology, and fine arts projects.</li>
+<li>Maximized output and production time by revising a standardized procedure for a mechanical engineering project.</li>
+<li>Collaborated with the Machine Shop Supervisor to edit and improve the Machine Shop Competency Test.</li>
+<li>Analyzed machine shop functionality and revamped systems, which increased output, proficiency, and usage.</li>
+<li>Recipient of outstanding job evaluations.</li>
+<li>Presented Student Employee of the Year Award from the Mechanical Engineering Department in 2010.</li> 
+
+<h3 class=title>Colgate-Palmolive - Piscataway, NJ</h3>
+<h3 class=title><li>Intern - Global Toothbrush Division  (06/11 - 08/11)</h3>
+
+<li>Conducted research and gathered data on a corporate digital toothbrush printer (utilized to market national dentists), which reduced costs and increased manufacturing operations.</li>
+<li>Answered inquiries from national and global vendors, upper management, and staff regarding design technology, specifications, and efficient operational practices.</li> 
+<li>Performed cost analysis, evaluated, and selected quality vendors used to construct an automated printer loader.</li>   
+<li>Participated in conference calls and meetings with the Global Toothbrush Division.</li>
+<li>Collaborated with a team to assess UV laser performance to replace toothbrush printing.</li>
+
+<h4 class=title>Key Achievements</h4>
+<li>Developed and presented a PowerPoint presentation to vendors that illustrated design requirements necessary to produce an automated print loader.</li>
+<li>Increased human relations by drafting emails and answering telephone calls to provide updates and print loader information.</li>
+<li>Received commendations from the Associate Director for exceeding performance goals.</li>
+
+<h3 class=title>OFFICE MAX - Salina, KS</h3>
+<h3 class=title>Retail Sales Associate  (02/05 - 08/07)</h3>
+
+<li>Identified needs and created effective solutions by selling quality office, computer, and printer products.</li>
+<li>Supervised and trained new employees.</li>
+<li>Provided computer troubleshooting, repair, and setup.</li>
+
+<h4 class=title>Key Achievements</h4>
+<li>Consistently met monthly sales and extended warranty goals.</li>
+<li>Received numerous upselling and product replacement awards.</li> 
+
+<h2 class=title>Awards and Memberships</h2>
+
+<li>National Society of Collegiate Scholars, 2008 - Present</li>
+<li>American Society of Mechanical Engineers, University of Kansas Chapter, 2009 - Present</li>
+<li>Member, Zeta Theta Tau, University of Kansas Chapter, 2010 - Present</li>
+<li>Received Second Place Award for an endurance event from the National American Society of Mechanical Engineers Competition, 2010</li>
+<li>Awarded Mechanical Engineering Departmental Scholarship, Fall 2010</li>
+<li>Dean’s List, University of Kansas, Spring 2009</li>
 
 <p class="links"><a href="/blog/construction/" title="b0x" class="comments">.pdf</a></p>
 {% endblock %}
