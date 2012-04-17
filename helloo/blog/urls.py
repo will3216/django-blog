@@ -76,7 +76,7 @@ urlpatterns = patterns('blog.views',
         queryset=Post.objects.filter(tags__name__in=["contact"]).order_by("order"),
         template_name="contact.html")),
     url(r'^curriculum_vitae/$', direct_to_template, {'template': 'cv.html'}),
-    url(r'^curriculum_vitae/(?P<path>.*)$', 'django.views.static.serve',
+    (r'^curriculum_vitae/(?P<path>.*)$', 'django.views.static.serve',
         {'/static/': '/static/misc'}),
     url(r'^construction/$', direct_to_template, {'template': 'construction.html'}),
 )
