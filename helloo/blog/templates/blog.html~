@@ -3,46 +3,13 @@
 {% block content %}
 
 {% for post in object_list %}
-{% if post.include_picture == '1' %}
-    {% if post.alignment == '1' %}
-	{% if post.size == '1'%}
-	    <img src="/static/img/{{ post.picture_name }}" class='leftsmall' alt="/static/img/img10" />
-        {% else %}
-            {% if post.size == '2'%}
-                <img src="/static/img/{{ post.picture_name }}" class='leftmedium' alt="/static/img/img10" />
-            {% else %}
-                <img src="/static/img/{{ post.picture_name }}" class='leftlarge' alt="/static/img/img10" />
-            {% endif %}
-        {% endif %}
-    {% else %}
-        {% if post.alignment == '2'%}
-            {% if post.size == '1'%}
-		<img src="/static/img/{{ post.picture_name }}" class='rightsmall' alt="/static/img/img10" />
-            {% else %}
-                {% if post.size == '2'%}
-            	    <img src="/static/img/{{ post.picture_name }}" class='rightmedium' alt="/static/img/img10" />
-                {% else %}
-            	    <img src="/static/img/{{ post.picture_name }}" class='rightlarge' alt="/static/img/img10" />
-            	{% endif %}
-    	    {% endif %}
-        {% else %}
-            {% if post.size == '1'%}
-		<img src="/static/img/{{ post.picture_name }}" class='centersmall' alt="/static/img/img10" />
-            {% else %}
-                {% if post.size == '2'%}
-            	    <img src="/static/img/{{ post.picture_name }}" class='centermedium' alt="/static/img/img10" />
-                {% else %}
-                    <img src="/static/img/{{ post.picture_name }}" class='centerlarge' alt="/static/img/img10" />
-                {% endif %}
-            {% endif %}
-        {% endif %}
-    {% endif %}
-{% endif %}
+
 <div class="post">
 	{% if post.title == 'no_title' %}
 	{% else %}
 	    	<h2 class="title">{{ post.title }}</h2>
 	{% endif %}
+	
 	<p class="meta"><span class="date">{{ post.created }}</span><span class="posted">Posted by <a href="/blog/about">Shane Gooden</a></span></p>
 
 	<div style="clear: both;">&nbsp;</div>
@@ -54,7 +21,7 @@
 		<div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'example'; // required: replace example with your forum shortname
+    var disqus_shortname = 'fabnfool'; // required: replace example with your forum shortname
 
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {

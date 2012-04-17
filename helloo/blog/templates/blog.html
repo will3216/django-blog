@@ -3,7 +3,13 @@
 {% block content %}
 
 {% for post in object_list %}
-{% if post.include_picture == '1' %}
+
+<div class="post">
+	{% if post.title == 'no_title' %}
+	{% else %}
+	    	<h2 class="title">{{ post.title }}</h2>
+	{% endif %}
+	{% if post.include_picture == '1' %}
     {% if post.alignment == '1' %}
 	{% if post.size == '1'%}
 	    <img src="/static/img/{{ post.picture_name }}" class='leftsmall' alt="/static/img/img10" />
@@ -38,11 +44,6 @@
         {% endif %}
     {% endif %}
 {% endif %}
-<div class="post">
-	{% if post.title == 'no_title' %}
-	{% else %}
-	    	<h2 class="title">{{ post.title }}</h2>
-	{% endif %}
 	<p class="meta"><span class="date">{{ post.created }}</span><span class="posted">Posted by <a href="/blog/about">Shane Gooden</a></span></p>
 
 	<div style="clear: both;">&nbsp;</div>
