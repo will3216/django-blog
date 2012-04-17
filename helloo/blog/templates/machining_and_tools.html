@@ -3,6 +3,15 @@
 {% block content %}
 <h2> Machining and Tools </h2>
 {% for post in object_list %}
+
+
+<div class="post">
+{% if post.title == 'no_title' %}
+{% else %}
+<h3 class="title">{{ post.title }}</h3>
+{% endif %}
+<div style="clear: both;">&nbsp;</div>
+<div class="entry">
 {% if post.include_picture == '1' %}
     {% if post.alignment == '1' %}
 	{% if post.size == '1'%}
@@ -37,16 +46,7 @@
             {% endif %}
         {% endif %}
     {% endif %}
-{% endif %}
-
-<div class="post">
-{% if post.title == 'no_title' %}
-{% else %}
-<h3 class="title">{{ post.title }}</h3>
-{% endif %}
-<div style="clear: both;">&nbsp;</div>
-<div class="entry">
-	
+{% endif %}	
 {{ post.body|safe|linebreaks }}
 	
 </div>
