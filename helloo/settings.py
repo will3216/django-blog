@@ -13,7 +13,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
 	'ENGINE': 'django.db.backends.postgresql_psycopg2', 
-	'NAME': 'mysite.db',                      
+	'NAME': 'test.db',                      
 	'USER': 'woogles',                      
 	'PASSWORD': 'mooooo',
 	'HOST': '', 
